@@ -1,0 +1,32 @@
+<%= form_with(model: meetup_shop, local: true) do |form| %>
+  <% if meetup_shop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meetup_shop.errors.count, "error") %> prohibited this meetup_shop from being saved:</h2>
+
+      <ul>
+      <% meetup_shop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :meetup_id %>
+    <%= form.text_field :meetup_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shop_id %>
+    <%= form.text_field :shop_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fix %>
+    <%= form.check_box :fix %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

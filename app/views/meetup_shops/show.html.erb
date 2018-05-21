@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Meetup:</strong>
+  <%= @meetup_shop.meetup %>
+</p>
+
+<p>
+  <strong>Shop:</strong>
+  <%= @meetup_shop.shop %>
+</p>
+
+<p>
+  <strong>Fix:</strong>
+  <%= @meetup_shop.fix %>
+</p>
+
+<%= link_to 'Edit', edit_meetup_shop_path(@meetup_shop) %> |
+<%= link_to 'Back', meetup_shops_path %>

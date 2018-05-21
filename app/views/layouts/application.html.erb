@@ -10,6 +10,15 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <div>
+      <%= link_to 'GitHubでログイン', 'auth/github' %>
+      <% unless session[:user].nil? %>
+        ようこそ <%= session[:user]['nickname'] %> さん
+      <% end %>
+    </div>
+    <div>
+      <%= yield %>
+    </div>
   </body>
 </html>

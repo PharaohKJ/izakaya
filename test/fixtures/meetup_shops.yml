@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meetup: one
+  shop: one
+  fix: false
+
+two:
+  meetup: two
+  shop: two
+  fix: false
