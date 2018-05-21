@@ -25,6 +25,7 @@ GitHubログインのためのキーは環境変数経由か `.env` ファイル
 $ git clone <this>
 $ cd kzrb_izakaya
 $ bundle install --path vendor/bundle
+$ bundle exec rails db:migrate
 $ bundle exec rails s
 
 ```

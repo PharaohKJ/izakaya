@@ -2,9 +2,11 @@
   <ul>
     <li>次回のkzrb飲み会会場</li>
     <% if login? %>
-      <li>会の作成</li>
-      <li>会場登録</li>
-      <li>会場レビュー</li>
+      <li><%=link_to '会の一覧', meetups_path%></li>
+      <li><%=link_to 'お店の一覧', shops_path%></li>
+      <li><%=link_to 'レビュー一覧', reviews_path%></li>
+      <li><%=link_to 'つけた点数一覧', points_path %></li>
+      <li><%=link_to '使用者一覧', users_path%></li>
     <% end %>
   </ul>
 </div>
